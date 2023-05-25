@@ -2988,16 +2988,16 @@ t.insert('naseeb')
 //   constructor(){
 //     this.root=new node()
 //   }
-//   insert(word){
-//     let curr=this.root
-//     for(let i=0;i<word.length;i++){
-//       let char=word[i]
-//       if (!curr.child[char]) {
-//           curr.child[char]=new node()
-//       }
-//       curr=curr.child[char]
-//     }
-//     curr.isWord=true
-//   }
+  insert(word){
+    let curr=this.root
+    for(let i=0;i<word.length;i++){
+      let char=word[i]
+      if (!curr.child[char]) {
+          curr.child[char]=new node()
+      }
+      curr=curr.child[char]
+    }
+    curr.isWord=true
+  }
   
 // }
