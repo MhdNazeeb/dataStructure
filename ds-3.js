@@ -2555,44 +2555,44 @@
 // bst.insert(3)
 // console.log(bst.search(bst.root,4));
 
-class node {
-  constructor() {
-    this.child = {};
-    this.isWord = false;
-  }
-}
-class trie {
-  constructor() {
-    this.root = new node();
-  }
-  insert(word) {
-    let curr = this.root;
-    for (let i = 0; i < word.length; i++) {
-      let char = word[i];
-      if (!curr.child[char]) {
-        curr.child[char] = new node();
-        console.log( curr.child[char])
-        console.log(curr)
-      }
-      curr = curr.child[char];
+// class node {
+//   constructor() {
+//     this.child = {};
+//     this.isWord = false;
+//   }
+// }
+// class trie {
+//   constructor() {
+//     this.root = new node();
+//   }
+//   insert(word) {
+//     let curr = this.root;
+//     for (let i = 0; i < word.length; i++) {
+//       let char = word[i];
+//       if (!curr.child[char]) {
+//         curr.child[char] = new node();
+//         console.log( curr.child[char])
+//         console.log(curr)
+//       }
+//       curr = curr.child[char];
      
-    }
-    curr.isWord=true
-  }
-  startWith(prifix){
-    let curr=this.root
-    for(let i=0;i<prifix.length;i++){
-      let char=prifix[i]
-      if (!curr.child[char]) {
-        return false
-      }
-      curr=curr.child[char]
-    }
+//     }
+//     curr.isWord=true
+//   }
+//   startWith(prifix){
+//     let curr=this.root
+//     for(let i=0;i<prifix.length;i++){
+//       let char=prifix[i]
+//       if (!curr.child[char]) {
+//         return false
+//       }
+//       curr=curr.child[char]
+//     }
 
-  }
-}
-const t=new trie()
-t.insert('naseeb')
+//   }
+// }
+// const t=new trie()
+// t.insert('naseeb')
 
 // class graph {
 //   constructor() {
@@ -2988,16 +2988,16 @@ t.insert('naseeb')
 //   constructor(){
 //     this.root=new node()
 //   }
-  insert(word){
-    let curr=this.root
-    for(let i=0;i<word.length;i++){
-      let char=word[i]
-      if (!curr.child[char]) {
-          curr.child[char]=new node()
-      }
-      curr=curr.child[char]
-    }
-    curr.isWord=true
-  }
+  // insert(word){
+  //   let curr=this.root
+  //   for(let i=0;i<word.length;i++){
+  //     let char=word[i]
+  //     if (!curr.child[char]) {
+  //         curr.child[char]=new node()
+  //     }
+  //     curr=curr.child[char]
+  //   }
+  //   curr.isWord=true
+  // }
   
 // }
